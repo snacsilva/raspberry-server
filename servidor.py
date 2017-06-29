@@ -5,7 +5,7 @@ import sqlite3
 
 # Host como 0.0.0.0 pega o ip da máquina e fica ouvindo nele
 HOST = '0.0.0.0'
-PORT = 7370
+PORT = 7374
 
 # AF_INET = IP ; SOCK_STREAM = TCP
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
