@@ -10,7 +10,6 @@ cursor = conexao.cursor()
 cursor.execute("""
     CREATE TABLE `professor` ( 
     `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
-    `rfid` INTEGER NOT NULL UNIQUE ,
     `matricula` TEXT NOT NULL UNIQUE );
     """)
 
@@ -86,6 +85,22 @@ cursor.execute("""
     
 """)
 
+try:
+    cursor.execute("""
+      INSERT INTO card VALUES ('1','123456')
+    """)
+
+    cursor.execute("""
+          INSERT INTO room VALUES ('1','LAB4')
+        """)
+
+    conexao.commit()
+except Exception as erro:
+    print(erro)
+
+
 conexao.close()
 
 print('Tabelas criadas com sucesso!')
+
+print('Informações inseridas com sucesso!')
