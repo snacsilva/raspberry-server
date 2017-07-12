@@ -40,7 +40,8 @@ cursor.execute("""
 cursor.execute("""
 
      CREATE TABLE `dia_semana` ( 
-    `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, 
+    `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+    `id_dia` INTEGER NOT NULL UNIQUE ,
     `nome_dia` TEXT NOT NULL UNIQUE ); 
 """)
 
