@@ -1,3 +1,5 @@
+Projeto SmartCampus - UniFanor - 2017
+
 Servidor no raspberry pi 3 com python onde será tratada as informações que virá do esp com rfid onde validará e salvará se tal professor é autorizado a liberar e entrar na sala ou não.
 
 INSTRUÇÕES PARA EXECUÇÃO
